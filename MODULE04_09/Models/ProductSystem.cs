@@ -9,6 +9,7 @@ namespace MODULE04_09.Models
 {
     public class ProductSystem
     {
+        //把原本寫在controller中的entity部分寫到model中來，對controller做了遮蔽存取資料庫的動作。
         public Product GetProductByID(int id)
         {
             NorthwindEntities db = new NorthwindEntities();
